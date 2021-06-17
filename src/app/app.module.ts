@@ -9,13 +9,25 @@ import { AppRoutingModule } from './app-routing.module';
 
 //AppComponent es el componente principal de Angular
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { SlideshowComponent } from './slideshow/slideshow.component';
+import { GaleriaComponent } from './galeria/galeria.component';
+import { MouseComponent } from './mouse/mouse.component';
+import { ArticulosComponent } from './articulos/articulos.component';
+import { FormularioComponent } from './formulario/formulario.component';
 
 //Los decoradores son funciones que modifican clases de JavaScript. 
 @NgModule({
 
   //Las declaraciones son las clases de vista que pertenecen a este módulo.
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    SlideshowComponent,
+    GaleriaComponent,
+    MouseComponent,
+    ArticulosComponent,
+    FormularioComponent
   ],
 
   //Importamos otros módulos cuyas clases exportadas sean necesarias para las plantillas de componentes declaradas en este módulo.

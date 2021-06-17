@@ -1,5 +1,8 @@
 //Importamos la clase Component para recompilar metadatos de configuracion de componentes.
 import { Component, OnInit } from '@angular/core';
+import { TweenMax } from 'gsap/all';
+import { Quad } from 'gsap';
+
 
 declare var jQuery:any;
 declare var $:any;
@@ -23,20 +26,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit(){
   
-/*=============================================
-JD SLIDER
-=============================================*/
-
-$('.slideshow').jdSlider({
-
-  wrap:'.slide-inner', //Especificar el slide que vamos a usar
-  isAuto: true, //Inicia la animación automáticamente
-  isLoop: true, //Al finalizar vuelve a comenzar
-  interval: 7000, //Tiempo por cada slide
-  isCursor:true //Pausar animación con el mouse
-
-});
-
 /*=============================================
 PINTEREST GRID
 =============================================*/
@@ -114,6 +103,15 @@ $.scrollUp({
   scrollText: "",
   scrollSpeed:2000,
   easingType: "easeOutQuint"
+})
+
+$("#scrollUp").css({
+
+  bottom: "20px",
+  right: "20px",
+  width: "50px",
+  height: "50px",
+  background: "url(../assets/img/flecha.jpg)"
 })
 
 /*=============================================
